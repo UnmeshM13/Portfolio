@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.search {
+    height: 50px;
+    position: relative;
+}
+.btn {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.input {
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    padding: 18px;
+    transition: width 0.5s ease;
+}
+
+
+.btn:focus ,
+.input:focus {
+    outline: none;
+}
+
+.search.show .input{
+    width: 200px;
+}
+.search.show .btn {
+    transform: translateX(200px);
+}
